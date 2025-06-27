@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws n’ Play</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-light me-5" href="#"><img class="me-3" src="images/logo.svg"
+                    alt="Paws n’ Play Logo">Paws n’ Play</a>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link active text-light" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link text-light" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn rounded-5 px-3 text-black border-0 bg-light" type="submit">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/header.png" class="d-block w-100" alt="Paws n’ Play Header">
+                <div class="carousel-caption d-md-block col-5">
+                    <h1 class="fs-1 mb-3 col-10">Pawsitively Perfect: Where Every Pet's Dream Comes True!</h1>
+                    <p class="mb-4 col-11">Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a
+                        world of tail-wagging joy and furry companionship with our wide range of products and services.
+                        From pampering essentials to playful toys, we're here to make every moment with your pet
+                        pawsitively perfect!</p>
+                    <div>
+                        <button class="btn border-white rounded-5 px-4 text-center text-white border-2 bg-transparent"
+                            type="submit">Shop Now <img src="images/logo.svg" alt="Shop Icon"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section>
+
+        <div class="container mt-4 p-4 bg-white shadow-sm">
+            <h2 class="text-dark">
+                <img class="me-3" src="images/logo.svg" alt="Shop Icon"> Shop
+            </h2>
+            <div class="d-flex mb-4 align-items-center">
+                <h2 class="me-auto">Featured Products</h2>
+                <input type="text" class="form-control" style="max-width: 200px;" placeholder="Search">
+            </div>
+            <ul class="nav nav-tabs mb-2" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="row row-cols-3 g-2">
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/Adoption.png" class="card-img-top rounded" alt="Random Pet Image">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/Adoption.png" class="card-img-top rounded" alt="Random Pet Image">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/Adoption.png" class="card-img-top rounded" alt="Random Pet Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <div class="row row-cols-3 g-2">
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGV0c3xlbnwwfDB8fHww"
+                                    class="card-img-top rounded" alt="Random Pet Image">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGV0c3xlbnwwfDB8fHww"
+                                    class="card-img-top rounded" alt="Random Pet Image">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGV0c3xlbnwwfDB8fHww"
+                                    class="card-img-top rounded" alt="Random Pet Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+                    <div class="row row-cols-3 g-2">
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://hips.hearstapps.com/hmg-prod/images/grey-cat-playing-royalty-free-image-1721750423.jpg?crop=0.751xw:1.00xh;0.191xw,0&resize=1200:*"
+                                    class="card-img-top rounded" alt="Random Pet Image">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://hips.hearstapps.com/hmg-prod/images/grey-cat-playing-royalty-free-image-1721750423.jpg?crop=0.751xw:1.00xh;0.191xw,0&resize=1200:*"
+                                    class="card-img-top rounded" alt="Random Pet Image">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://hips.hearstapps.com/hmg-prod/images/grey-cat-playing-royalty-free-image-1721750423.jpg?crop=0.751xw:1.00xh;0.191xw,0&resize=1200:*"
+                                    class="card-img-top rounded" alt="Random Pet Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="text-end mt-4">
+                <a href="#" class="btn btn-link text-decoration-none text-dark">View More >></a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="d-container mt-4 p-4 bg-white shadow-sm w-100">
+            <div class="container">
+                <h2 class="text-dark">
+                    <img class="me-3" src="images/logo.svg" alt="Shop Icon"> Services
+
+                </h2>
+
+                <div class="row g-4">
+                    <div class="col-4 mb-4">
+                        <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-80 position-relative ">
+                            <img src="images/Grooming.png" alt="Pet Grooming" class="card-img h-80 w-100 service-img">
+                            <div
+                                class="card-img-overlay d-flex align-items-center justify-content-center service-overlay">
+                                <h3 class="card-title text-white fw-bold fs-1 text-center service-title">Grooming</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 mb-4">
+                        <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-80 position-relative ">
+                            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Pet Boarding" class="card-img h-80 w-100 service-img">
+                            <div
+                                class="card-img-overlay d-flex align-items-center justify-content-center service-overlay">
+                                <h3 class="card-title text-white fw-bold fs-1 text-center service-title">Boarding</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 mb-4">
+                        <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-80 position-relative ">
+                            <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Pet Grooming" class="card-img h-80 w-100 service-img">
+                            <div
+                                class="card-img-overlay d-flex align-items-center justify-content-center service-overlay">
+                                <h3 class="card-title text-white fw-bold fs-1 text-center service-title">Grooming</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 mb-4">
+                        <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-80 position-relative ">
+                            <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Veterinary Services" class="card-img h-80 w-100 service-img">
+                            <div
+                                class="card-img-overlay d-flex align-items-center justify-content-center service-overlay">
+                                <h3 class="card-title text-white fw-bold fs-1 text-center service-title">Veterinary</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 mb-4">
+                        <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-80 position-relative ">
+                            <img src="https://images.unsplash.com/photo-1605568427561-40dd23c2acea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Pet Training" class="card-img h-80 w-100 service-img">
+                            <div
+                                class="card-img-overlay d-flex align-items-center justify-content-center service-overlay">
+                                <h3 class="card-title text-white fw-bold fs-1 text-center service-title">Training</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+
+        <div class="container mt-4 p-4 bg-white shadow-sm">
+            <div class="container mt-5">
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <p class="fs-5 fw-light">
+                            At Paws n' Play, our journey began with a simple yet profound love for animals. Inspired by
+                            the
+                            unwavering companionship and joy they bring to our lives, we embarked on a mission to create
+                            a haven
+                            where pets and their owners alike could experience unparalleled happiness and care.
+                        </p>
+
+                        <p class="fs-5 fw-light mt-4">
+                            Driven by our passion for animal welfare, we hand-select each product and service with
+                            meticulous
+                            attention to quality and sustainability. From nutritious food and enriching toys to expert
+                            grooming
+                            and healthcare, every offering is carefully curated to meet the unique needs of our beloved
+                            furry
+                            friends.
+                        </p>
+
+                        <p class="fs-5 fw-light mt-4">
+                            But our commitment doesn’t end there. We’re dedicated to fostering a community that
+                            celebrates the
+                            bond between pets and their human companions. Through educational resources, compassionate
+                            support,
+                            and memorable experiences, we strive to empower pet owners to provide the best possible care
+                            for
+                            their furry family members.
+                        </p>
+
+                        <p class="fs-5 fw-light mt-4">
+                            At Paws n' Play, customer satisfaction isn’t just a goal – it’s our guiding principle. We go
+                            above
+                            and beyond to ensure every interaction leaves tails wagging and hearts smiling. From
+                            personalized
+                            recommendations to attentive service, we’re here to make your journey with your pet as
+                            joyful and
+                            fulfilling as possible.
+                        </p>
+
+                        <p class="fs-5 fw-light mt-4">
+                            Join us in our mission to create a world where every pet is cherished, every need is met,
+                            and every
+                            tail wags with happiness. Welcome to Paws n' Play, where pets are family, and love knows no
+                            bounds.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="custom-card text-center mb-4">
+                            <img src="images/big cat.png" alt="Cat with Cake" class="img-fluid rounded">
+                        </div>
+
+                        <div class="custom-card text-center">
+                            <img src="images/small cat.png" alt="Cat & Cake" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+
+        <div class="container mt-4 p-4 bg-white shadow-sm">
+            <div class="container mt-5">
+                <div class="text-start mb-4">
+                    <h2 class="mb-3">Our Team</h2>
+                    <hr class="w-75 text-secondary">
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card border rounded shadow-sm h-100">
+                            <img src="images/Dr. Olivia Rhye.jpg" alt="Dr. Olivia Rhye" class="card-img-top"
+                                style="height: 300px; object-fit: cover;">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Dr. Olivia Rhye</h5>
+                                <p class="card-text text-muted mb-3">Senior Veterinarian</p>
+
+                                <div class="mt-auto">
+                                    <a href="#" class="text-decoration-none text-dark me-2"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-decoration-none text-dark me-2"><i
+                                            class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-decoration-none text-dark"><i
+                                            class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card border rounded shadow-sm h-100">
+                            <img src="images/Phoenix Baker.jpg" alt="Phoenix Baker" class="card-img-top"
+                                style="height: 300px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Phoenix Baker</h5>
+                                <p class="card-text text-muted mb-3">Asst. Veterinarian</p>
+                                <div class="mt-auto">
+                                    <a href="#" class="text-decoration-none text-dark me-2"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-decoration-none text-dark me-2"><i
+                                            class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-decoration-none text-dark"><i
+                                            class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card border rounded shadow-sm h-100">
+                            <img src="images/Lana Steiner.jpg" alt="Lana Steiner" class="card-img-top"
+                                style="height: 300px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Lana Steiner</h5>
+                                <p class="card-text text-muted mb-3">Resident Veterinarian</p>
+                                <div class="mt-auto">
+                                    <a href="#" class="text-decoration-none text-dark me-2"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-decoration-none text-dark me-2"><i
+                                            class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-decoration-none text-dark"><i
+                                            class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card border rounded shadow-sm h-100">
+                            <img src="images/Demi Wilkinson.jpg" alt="Demi Wilkinson" class="card-img-top"
+                                style="height: 300px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-1">Demi Wilkinson</h5>
+                                <p class="card-text text-muted mb-3">Intern Veterinarian</p>
+                                <div class="mt-auto">
+                                    <a href="#" class="text-decoration-none text-dark me-2"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-decoration-none text-dark me-2"><i
+                                            class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-decoration-none text-dark"><i
+                                            class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <footer class="bg-dark text-light pt-5 mt-4 pb-3">
+        <div class="container">
+            <!-- Newsletter Subscription -->
+            <div class="py-4 d-flex flex-row justify-content-between align-items-center ">
+                <div>
+                    <h5 class="text-white fw-bold">Join our newsletter</h5>
+                    <p class="text-secondary">Be the first to receive latest updates on promo, sales and offers</p>
+
+                </div>
+                <div class="d-flex flex-column flex-md-row w-25">
+                    <input type="email" class="form-control me-md-2 mb-2 mb-md-0" placeholder="Enter your email">
+                    <button class="btn btn-light">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Footer Columns -->
+            <div class="row py-4 d-flex justify-content-between align-items-start">
+                <!-- Paws 'n' Play Column -->
+                <div class="col-3 row">
+
+                    <div class="col-12  mb-3">
+                        <h6 class="text-white fw-bold">Paws 'n' Play</h6>
+                        <p class="text-secondary">Where wagging tails and purring hearts reign supreme!</p>
+                    </div>
+                </div>
+                <div class="col-9 row d-flex justify-content-around">
+                    <!-- Shop Column -->
+                    <div class="col-2">
+                        <h6 class="text-white fw-bold">Shop</h6>
+                        <ul class="list-unstyled text-secondary">
+                            <li>Pet Adoption</li>
+                            <li>Nutrition</li>
+                            <li>Pet Care</li>
+                            <li>Reward</li>
+                            <li>Pricing</li>
+                        </ul>
+                    </div>
+                    <!-- Company Column -->
+                    <div class="col-2 mb-3">
+                        <h6 class="text-white fw-bold">Company</h6>
+                        <ul class="list-unstyled text-secondary">
+                            <li>About us</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>News</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <!-- Services Column -->
+                    <div class="col-2 mb-3">
+                        <h6 class="text-white fw-bold">Services</h6>
+                        <ul class="list-unstyled text-secondary">
+                            <li>Grooming</li>
+                            <li>Boarding</li>
+                            <li>Training</li>
+                            <li>Veterinary</li>
+                            <li>Support</li>
+                        </ul>
+                    </div>
+                    <!-- Social Column -->
+                    <div class="col-2 mb-3">
+                        <h6 class="text-white fw-bold">Social</h6>
+                        <ul class="list-unstyled text-secondary">
+                            <li>Twitter</li>
+                            <li>LinkedIn</li>
+                            <li>Facebook</li>
+                            <li>AngelList</li>
+                            <li>Dribbble</li>
+                        </ul>
+                    </div>
+                    <!-- Legal Column -->
+                    <div class="col-2 mb-3">
+                        <h6 class="text-white fw-bold">Legal</h6>
+                        <ul class="list-unstyled text-secondary">
+                            <li>Terms</li>
+                            <li>Privacy</li>
+                            <li>Cookies</li>
+                            <li>Licenses</li>
+                            <li>Settings</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="d-flex justify-content-between align-items-center border-top p-4 px-0">
+                <p class="text-secondary mb-0">© 2024 Paws 'n' Play. All rights reserved.</p>
+                <div class="mt-auto">
+                    <a href="#" class="text-decoration-none text-white text h4 me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-decoration-none text-white text h4 me-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-decoration-none text-white text h4 me-2"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-decoration-none text-white text h4 me-2"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="#" class="text-decoration-none text-white text h4 me-2"><i
+                            class="fa-regular fa-hand-peace"></i></a>
+                    <a href="#" class="text-decoration-none text-white h4"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
