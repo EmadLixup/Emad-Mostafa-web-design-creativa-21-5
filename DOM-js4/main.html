@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owl Carousel Example</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="owl-carousel owl-theme">
+
+            <div class="item">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://cdn-imgix.headout.com/media/images/c9db3cea62133b6a6bb70597326b4a34-388-dubai-img-worlds-of-adventure-tickets-01.jpg"
+                            class="img-fluid rounded-start" alt="IMG Worlds of Adventure" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">IMG Worlds - Adventure</h5>
+                            <p class="card-text">A thrilling experience with themed rides and attractions.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://cdn-imgix.headout.com/tour/7064/TOUR-IMAGE/c0e9c490-b7e7-47a6-9c43-3e10e8ddc9cb-4445-dubai-img-worlds-of-adventure-tickets-08.jpeg"
+                            class="img-fluid rounded-start" alt="IMG Worlds - Interior" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Adventure Zones</h5>
+                            <p class="card-text">Explore Cartoon Network, Marvel, and more!</p>
+                            <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://i.ytimg.com/vi/rFwyyxTJHh0/maxresdefault.jpg" class="img-fluid rounded-start"
+                            alt="Ride Preview" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Exciting Rides</h5>
+                            <p class="card-text">Get your adrenaline pumping with the best attractions in Dubai.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section>
+
+        <ul>
+            <li onclick="handelColorClick(event)" id="1-st">Home</li>
+            <li onclick="handelColorClick(event)" id="2-nd">Contact</li>
+            <li onclick="handelColorClick(event)" id="3-rd">Services</li>
+        </ul>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
