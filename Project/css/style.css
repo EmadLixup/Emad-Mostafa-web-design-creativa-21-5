@@ -1,0 +1,74 @@
+.rotate-45 {
+  transform: rotate(-45deg);
+}
+.contact-background {
+  background-image: url("https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-bg-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+}
+.bg-black {
+  background-color: #000;
+}
+
+.bg-darker {
+  background-color: #1a1a1a;
+}
+
+.text-blue {
+  color: #2e7dce !important;
+}
+
+.text-gray {
+  color: #666 !important;
+}
+
+/* Footer Styles */
+.main-footer {
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.blue-line {
+  width: 80px;
+  border-color: #2e7dce;
+  margin-left: 0;
+}
+
+.tag {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #2e7dce;
+  color: #fff;
+}
+
+.post-content p {
+  margin-bottom: 5px;
+}
+
+.service-card .overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+.service-card:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
