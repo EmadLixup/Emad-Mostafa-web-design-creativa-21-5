@@ -2,38 +2,468 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>World</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
 
-<body>
-    <section section class="bg-section">
-        <div class="container">
-            <nav class="d-flex ">
-                <h2 class="white">World</h2>
-                <ul class="d-flex">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="services.html">Services</a></li>
-                </ul>
-            </nav>
+<body class="d-flex flex-column min-vh-100">
 
-            <div class=" down-text d-flex">
-                <div class="circle-text d-flex">
-                    <p class="white">Discover the beauty and diversity of our planet.</p>
+    <header class="position-relative">
+        <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 z-3 ">
+            <div class="container border-1 border-bottom border-white">
+                <a class="navbar-brand text-white py-2" href="#">WORLD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Gadgets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Lifestyle</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Video</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="circle-text d-flex">
-                    <p class="white">Discover the beauty and diversity of our planet.</p>
-                </div>
-                <div class="circle-text d-flex">
-                    <p class="white">Discover the beauty and diversity of our planet.</p>
+            </div>
+        </nav>
+
+        <div class="bg-dark" style="background: url('images/bg1.jpg') center/cover no-repeat; height: 100vh;">
+            <div class="bg-black bg-opacity-50 h-100 d-flex flex-column justify-content-end">
+                <div class="container mb-5">
+                    <ul class="list-unstyled d-flex justify-content-between text-white opacity-75 small">
+                        <li class="d-flex align-items-center">
+                            <span
+                                class="border border-white rounded-circle me-2 d-inline-flex align-items-center justify-content-center"
+                                style="width:32px;height:32px">1</span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </li>
+                        <li class="d-flex align-items-center text-primary opacity-100">
+                            <span
+                                class="border border-primary rounded-circle me-2 d-inline-flex align-items-center justify-content-center"
+                                style="width:32px;height:32px">2</span>
+                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span
+                                class="border border-white rounded-circle me-2 d-inline-flex align-items-center justify-content-center"
+                                style="width:32px;height:32px">3</span>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
+
+    <main class="container my-5 flex-grow-1">
+        <div class="row">
+            <div class="col-lg-8">
+                <section class="mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="mb-0">Don’t Miss</h4>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link px-2 active" href="#">All</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Style Hunter</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Vogue</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Health &amp; Fitness</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Travel</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Gadgets</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">More</a></li>
+                        </ul>
+                    </div>
+                    <div class="row gy-4">
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm">
+                                <img src="images/b1.jpg" class="card-img-top w-100" alt="Don’t Miss main" />
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Travel</span>
+                                    <h5 class="card-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit adipisci magni
+                                        nisi eos, accusamus saepe.
+                                    </p>
+                                    <p class="card-text text-muted small">
+                                        by <a href="#" class="link-secondary">Jane Doe</a> on Jan 01, 2025
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row gy-3">
+                                <div class="col-md-12">
+                                    <div class="card shadow-sm d-flex flex-row">
+                                        <img src="images/b10.jpg" class="rounded-start img-fluid w-25" alt="Teaser 1" />
+                                        <div class="card-body p-2">
+                                            <h6 class="card-title mb-1">Ut enim ad minim veniam.</h6>
+                                            <p class="small text-muted mb-0">
+                                                by <a href="#" class="link-secondary">John Smith</a> on Jan 02, 2025
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card shadow-sm d-flex flex-row">
+                                        <img src="images/b11.jpg" class="rounded-start img-fluid w-25" alt="Teaser 2" />
+                                        <div class="card-body p-2">
+                                            <h6 class="card-title mb-1">Duis aute irure dolor.</h6>
+                                            <p class="small text-muted mb-0">
+                                                by <a href="#" class="link-secondary">Alice Lee</a> on Jan 03, 2025
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card shadow-sm d-flex flex-row">
+                                        <img src="images/b12.jpg" class="rounded-start img-fluid w-25" alt="Teaser 3" />
+                                        <div class="card-body p-2">
+                                            <h6 class="card-title mb-1">Excepteur sint occaecat.</h6>
+                                            <p class="small text-muted mb-0">
+                                                by <a href="#" class="link-secondary">Bob Brown</a> on Jan 04, 2025
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card shadow-sm d-flex flex-row">
+                                        <img src="images/b13.jpg" class="rounded-start img-fluid w-25" alt="Teaser 4" />
+                                        <div class="card-body p-2">
+                                            <h6 class="card-title mb-1">Sed ut perspiciatis.</h6>
+                                            <p class="small text-muted mb-0">
+                                                by <a href="#" class="link-secondary">Sara White</a> on Jan 05, 2025
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-start">
+                            <button class="btn btn-outline-secondary me-2 rounded-5">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary rounded-5">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="mb-0">What’s Trending</h4>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link px-2 active" href="#">All</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Style Hunter</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Vogue</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Health &amp; Fitness</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Travel</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">Gadgets</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#">More</a></li>
+                        </ul>
+                    </div>
+                    <div class="row gy-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm">
+                                <img src="images/b2.jpg" class="card-img-top w-100" alt="Trending 1" />
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Travel</span>
+                                    <h5 class="card-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </h5>
+                                    <p class="card-text text-muted small">
+                                        by <a href="#" class="link-secondary">Jane Doe</a> on Jan 06, 2025
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-12 mt-2">
+                                <div class="card shadow-sm d-flex flex-row mt-2">
+                                    <img src="images/b10.jpg" class="rounded-start img-fluid w-25" alt="Small 1" />
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-1">Ut enim ad minim veniam.</h6>
+                                        <p class="small text-muted mb-0">
+                                            by <a href="#" class="link-secondary">Bob Brown</a> on Jan 08, 2025
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card shadow-sm d-flex flex-row mt-2">
+                                    <img src="images/b10.jpg" class="rounded-start img-fluid w-25" alt="Small 1" />
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-1">Ut enim ad minim veniam.</h6>
+                                        <p class="small text-muted mb-0">
+                                            by <a href="#" class="link-secondary">Bob Brown</a> on Jan 08, 2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm">
+                                <img src="images/b4.jpg" class="card-img-top w-100" alt="Trending 2" />
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Travel</span>
+                                    <h5 class="card-title">
+                                        Sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                    </h5>
+                                    <p class="card-text text-muted small">
+                                        by <a href="#" class="link-secondary">Alice Lee</a> on Jan 07, 2025
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-12 mt-2">
+                                <div class="card shadow-sm d-flex flex-row mt-2">
+                                    <img src="images/b10.jpg" class="rounded-start img-fluid w-25" alt="Small 1" />
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-1">Ut enim ad minim veniam.</h6>
+                                        <p class="small text-muted mb-0">
+                                            by <a href="#" class="link-secondary">Bob Brown</a> on Jan 08, 2025
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card shadow-sm d-flex flex-row mt-2">
+                                    <img src="images/b10.jpg" class="rounded-start img-fluid w-25" alt="Small 1" />
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-1">Ut enim ad minim veniam.</h6>
+                                        <p class="small text-muted mb-0">
+                                            by <a href="#" class="link-secondary">Bob Brown</a> on Jan 08, 2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex justify-content-start mt-3">
+                        <button class="btn btn-outline-secondary me-2">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="col-lg-4">
+                <div class="mb-5">
+                    <h5>About World</h5>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                        lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod
+                        malesuada.
+                    </p>
+                    <hr />
+                </div>
+                <div class="mb-5">
+                    <h5>Top Stories</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <img src="images/b11.jpg" class="rounded me-3 img-fluid w-25" alt="Top 1" />
+                            <div>
+                                <h6 class="mb-1">Duis aute irure dolor in reprehenderit.</h6>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <img src="images/b12.jpg" class="rounded me-3 img-fluid w-25" alt="Top 2" />
+                            <div>
+                                <h6 class="mb-1">Excepteur sint occaecat cupidatat.</h6>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <img src="images/b13.jpg" class="rounded me-3 img-fluid w-25" alt="Top 3" />
+                            <div>
+                                <h6 class="mb-1">Sed ut perspiciatis unde omnis iste.</h6>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <img src="images/b10.jpg" class="rounded me-3 img-fluid w-25" alt="Top 4" />
+                            <div>
+                                <h6 class="mb-1">Ut enim ad minim veniam.</h6>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <img src="images/b15.jpg" class="rounded me-3 img-fluid w-25" alt="Top 5" />
+                            <div>
+                                <h6 class="mb-1">How Lorem ipsum dolor sit amet.</h6>
+                            </div>
+                        </li>
+                    </ul>
+                    <hr />
+                </div>
+                <div class="mb-5">
+                    <h5>Stay Connected</h5>
+                    <div class="d-flex gap-2">
+                        <a class="btn btn-outline-secondary btn-sm rounded-circle" href="#"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-secondary btn-sm rounded-circle" href="#"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a class="btn btn-outline-secondary btn-sm rounded-circle" href="#"><i
+                                class="fa-brands fa-pinterest"></i></a>
+                        <a class="btn btn-outline-secondary btn-sm rounded-circle" href="#"><i
+                                class="fa-brands fa-vimeo-v"></i></a>
+                        <a class="btn btn-outline-secondary btn-sm rounded-circle" href="#"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a class="btn btn-outline-secondary btn-sm rounded-circle" href="#"><i
+                                class="fa-brands fa-google"></i></a>
+                    </div>
+                    <hr class="mt-4" />
+                </div>
+                <div>
+                    <h5>Today’s Pick</h5>
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/b22.jpg" class="card-img-top w-100" alt="Today’s Pick" />
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="row mb-5">
+            <div class="col-lg-8">
+                <h5 class="mb-4">Latest Articles</h5>
+                <ul class="list-unstyled">
+                    <li class="d-flex mb-4">
+                        <img src="images/b1.jpg" class="rounded me-3 img-fluid w-25" alt="Article A" />
+                        <div>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                            <p class="text-muted small">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="small text-muted mb-0">
+                                by <a href="#" class="link-secondary">Jane Doe</a> on Jan 12, 2025
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-4">
+                        <img src="images/b6.jpg" class="rounded me-3 img-fluid w-25" alt="Article A" />
+                        <div>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                            <p class="text-muted small">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="small text-muted mb-0">
+                                by <a href="#" class="link-secondary">Jane Doe</a> on Jan 12, 2025
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-4">
+                        <img src="images/b3.jpg" class="rounded me-3 img-fluid w-25" alt="Article A" />
+                        <div>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                            <p class="text-muted small">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="small text-muted mb-0">
+                                by <a href="#" class="link-secondary">Jane Doe</a> on Jan 12, 2025
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-4">
+                        <img src="images/b4.jpg" class="rounded me-3 img-fluid w-25" alt="Article A" />
+                        <div>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                            <p class="text-muted small">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="small text-muted mb-0">
+                                by <a href="#" class="link-secondary">Jane Doe</a> on Jan 12, 2025
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-outline-primary">Load More</button>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="mb-4">Most Popular Videos</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                        <p class="small text-muted mb-0">
+                            by <a href="#" class="link-secondary">Sara White</a> on Jan 16, 2025
+                        </p>
+                    </li>
+                    <li class="mb-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                        <p class="small text-muted mb-0">
+                            by <a href="#" class="link-secondary">Sara White</a> on Jan 16, 2025
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-5 mt-auto">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5>WORLD</h5>
+                    <p class="small">© 2025 All rights reserved | Template by Colorlib</p>
+                </div>
+                <div class="col-md-4">
+                    <h6>Quick Links</h6>
+                    <div class="flex-column">
+                        <div class="row">
+                            <div class="col-4">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link p-0 text-light" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link p-0 text-light" href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link p-0 text-light" href="#">Fashion</a></li>
+                                    <li class="nav-item"><a class="nav-link p-0 text-light" href="#">Fashion</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link p-0 text-light" href="#">Lifestyle</a></li>
+                                    <li class="nav-item"><a class="nav-link p-0 text-light" href="#">Video</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4">
+                    <h6>Subscribe</h6>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="Enter your mail" />
+                        <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
