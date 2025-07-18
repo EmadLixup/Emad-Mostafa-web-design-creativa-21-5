@@ -1,3 +1,4 @@
+/*  Main Footer Styles  */
 .main-footer {
   background: #111;
   color: #fff;
@@ -9,6 +10,37 @@
   color: #007bff;
 }
 
+/* Contact Background */
+.contact-background {
+  position: relative;
+  background-image: url("../images/contact0.jpg");
+  min-height: 60vh;
+  background-size: cover;
+  background-position: top;
+}
+
+.contact-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 1;
+}
+
+.contact-background > .position-relative,
+.contact-background > .contact-bg-overlay {
+  z-index: 2;
+  position: relative;
+}
+
+.contact-bg-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*  Icon Circle  */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+}
+
+/*  Footer Section Headings  */
 .footer-section h4 {
   font-size: 1.25rem;
   margin-bottom: 2%;
@@ -23,11 +55,13 @@
   margin-top: 0.5%;
 }
 
+/*  Footer Contact  */
 .footer-contact p {
   margin-bottom: 0.5%;
   font-size: 0.875rem;
 }
 
+/*  Footer Posts  */
 .footer-posts .footer-post {
   display: flex;
   margin-bottom: 2%;
@@ -53,6 +87,7 @@
   font-size: 0.75rem;
 }
 
+/*  Footer Tags  */
 .footer-tags {
   display: flex;
   flex-wrap: wrap;
@@ -71,17 +106,20 @@
   background: #007bff;
 }
 
+/*  Footer Divider  */
 .main-footer hr {
   border-color: rgba(255, 255, 255, 0.1);
   margin: 2% 0;
 }
 
+/*  Footer Copyright  */
 .main-footer .text-center p {
   font-size: 0.875rem;
   color: #aaa;
   margin: 0;
 }
 
+/*  Footer Responsive  */
 @media (max-width: 576px) {
   .footer-posts .footer-post {
     flex-direction: column;

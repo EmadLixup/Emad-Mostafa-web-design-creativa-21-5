@@ -1,6 +1,8 @@
+/*  General Styles  */
 .rotate-45 {
   transform: rotate(-45deg);
 }
+
 .contact-background {
   background-image: url("https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   min-height: 60vh;
@@ -12,11 +14,11 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Icon Circle */
 .icon-circle {
   width: 60px;
   height: 60px;
 }
+
 .bg-black {
   background-color: #000;
 }
@@ -33,7 +35,6 @@
   color: #666 !important;
 }
 
-/* Footer Styles */
 .main-footer {
   color: #fff;
   font-family: "Arial", sans-serif;
@@ -63,6 +64,7 @@
   margin-bottom: 5px;
 }
 
+/*  Service Section Styles  */
 .service-card .overlay {
   opacity: 0;
   visibility: hidden;
@@ -71,4 +73,331 @@
 .service-card:hover .overlay {
   opacity: 1;
   visibility: visible;
+}
+
+/*  Counter Section Styles  */
+.h-section {
+}
+.counter-box {
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  background: #fff;
+}
+.counter-box i {
+  font-size: 2rem;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+.counter-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.counter-title {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/*  Service Background Styles  */
+#service {
+  position: relative;
+  background: url("../images/service-bg.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+#service .overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 0;
+}
+#service .container {
+  position: relative;
+  z-index: 1;
+}
+.service-card {
+  border: 1px solid #fff;
+  background: transparent !important;
+  transition: filter 0.3s;
+}
+.service-card > div:first-child {
+  background: transparent;
+  color: #fff;
+}
+.service-card .overlay {
+  background: #fff;
+  color: #000;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 2;
+}
+.service-card:hover .overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+.service-card:hover > div:first-child {
+  filter: brightness(0.7);
+}
+.shiny-button {
+  position: relative;
+  overflow: hidden;
+}
+.shiny-button::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewY(-8deg);
+}
+.shiny-button:hover::after {
+  animation: shineDown 0.6s ease;
+}
+@keyframes shineDown {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+/*  Portfolio Section Styles  */
+.tab-item {
+  display: none;
+}
+.tab-item.show {
+  display: block;
+}
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: #6c757d;
+  transition: color 0.3s;
+}
+.tab-btn:hover {
+  color: #0d6efd;
+}
+.tab-btn.active-tab {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
+.book-card {
+  position: relative;
+  perspective: 800px;
+}
+.book-card .card-img-top {
+  width: 100%;
+  display: block;
+  transform: none !important;
+  transition: none !important;
+  backface-visibility: hidden;
+}
+.book-card .card-body {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: none;
+}
+.book-card:hover .card-body {
+  animation: fadeInUp 0.5s ease forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  Back to Top Button Styles  */
+#backToTop {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+#backToTop.show {
+  display: block;
+  opacity: 0.8;
+}
+#backToTop:hover {
+  opacity: 1;
+}
+
+/*  Team Section Styles  */
+#team {
+  background: #f8f9fa;
+}
+.team-card {
+  cursor: pointer;
+  transition: transform 0.3s;
+  perspective: 600px;
+}
+.team-card:hover {
+  transform: translateY(-5px);
+}
+.team-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+.team-card:hover .team-overlay,
+.team-card.show-overlay .team-overlay {
+  transform: translateY(0);
+}
+.social-icons a {
+  font-size: 1rem;
+}
+
+/* Pricing Toggle Pills */
+.btn-group-toggle .btn {
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-group-toggle .btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group-toggle .btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group-toggle .btn.active,
+.btn-group-toggle .btn:active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+.btn-group-toggle .btn:not(.active):hover {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+/* Pricing Toggle Pills */
+
+/* Pricing Toggle Pills */
+.toggle-btn {
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+/* Center everything */
+.pricing-card {
+  text-align: center;
+}
+.toggle-btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.toggle-btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.toggle-btn.active {
+  background: #0d6efd;
+  color: #fff;
+}
+.toggle-btn:not(.active):hover {
+  background: rgba(13, 110, 253, 0.1);
+}
+
+/* Pricing Cards */
+.pricing-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+.pricing-card.active {
+  border-color: #0d6efd;
+  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.15);
+  transform: translateY(-12px);
+  z-index: 1;
+}
+
+/* Titles & Prices */
+.pricing-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.price-text,
+.price-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.price-text {
+  margin-bottom: 1rem;
+  color: #555;
+}
+.price-amount {
+  color: #0d6efd;
+}
+
+/* Divider */
+.pricing-card hr {
+  border-color: #e0e0e0;
+  margin: 1rem 0;
+}
+
+/* Features List */
+.pricing-card ul {
+  padding: 0;
+  margin: 0 0 1.5rem;
+  list-style: none;
+}
+.pricing-card ul li {
+  margin-bottom: 1rem;
+}
+.pricing-card ul li > strong {
+  display: block;
+  color: #333;
+  font-weight: 600;
+}
+.feature-desc {
+  font-size: 0.875rem;
+  color: #777;
+  margin: 0.25rem 0 0;
+}
+
+/* Action Buttons */
+.action-btn {
+  font-weight: 600;
+}
+
+/* Center toggle pills */
+.btn-group-toggle {
+  display: flex;
+  justify-content: center;
 }
